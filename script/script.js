@@ -344,7 +344,7 @@ function getWeather(city) {
 
                 })
 
-            let urlNew = "https://newsapi.org/v2/everything?q=" + `${city}` + "&language=en&sortBy=publishedAt&apiKey=eafa26c935304c7d9b4137ebaab7bc89";
+            let urlNew = "https://gnews.io/api/v4/search?q=" + `${city}` + "&lang=en&apikey=e8177e08eafcce86414a8216746d15dc";
             fetch(urlNew)
                 .then(response => response.json())
                 .then(json => {
