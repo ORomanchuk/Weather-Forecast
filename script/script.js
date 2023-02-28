@@ -230,7 +230,6 @@ function getWeather(city) {
                     for (let i = 1; i <= weatherBlocks.length; i++) {
                         if (checkBox.checked == true) {
                             moreTemperatureOutputs[i - 1].textContent = (json.daily[i].temp.eve * 1.8 + 32).toFixed() + "°";
-                            console.log(json.daily[i].temp.eve);
                         }
                         else {
                             moreTemperatureOutputs[i - 1].textContent = (json.daily[i].temp.day).toFixed() + "°";
@@ -274,7 +273,6 @@ function getWeather(city) {
                         dailyTemp[i - 1].textContent = (json.list[i].main.temp).toFixed() + "°";
                         if (checkBox.checked == true) {
                             dailyTemp[i - 1].textContent = (json.list[i].main.temp * 1.8 + 32).toFixed() + "°";
-                            console.log(json.list[i].main.temp);
                         }
                         else {
                             dailyTemp[i - 1].textContent = (json.list[i].main.temp).toFixed() + "°";
