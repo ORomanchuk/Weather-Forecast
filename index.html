@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="main">
+                <div class="mainInfo">
+
+                    <!-- HEADER -->
+                    <!-- HEADER -->
+                    <!-- HEADER -->
+
+                    <div class="header">
+                        <div class="city-name">
+                            <span class="city-out"></span>
+                        </div>
+                        <div class="searchBlock">
+                            <input id="another-location" placeholder="Another location">
+                            <img class="magnifier-block" src="./img/search.png">
+                        </div>
+                        <div class="headerBtns">
+                            <img class="menu headerImg" src="./img/menu.png" alt="setting" title="">
+                            <img class="openMap headerImg" src="./img/map.png" alt="map" title="open the weather map">
+                            <img class="location headerImg" src="./img/location.png" alt="location"
+                                title="find my current location">
+                        </div>
+                    </div>
+
+                    <!-- INFORMATION -->
+                    <!-- INFORMATION -->
+                    <!-- INFORMATION -->
+
+                    <div class="information">
+                        <div class="firstColumn">
+                            <div class="currentWeather">
+                                <div class="temperature">
+                                    <span id="temperature-out"></span>
+                                    <span class="feels"></span>
+                                </div>
+                                <div class="weather-icon">
+                                    <img class="weather-icon-img" src="" alt="weather">
+                                    <div class="weatherDescr">
+                                        <span class="condition-out"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondColumn">
+                            <div class="weather-condition">
+                                <span class="date"></span><br><span class="time"></span></span>
+                            </div>
+                        </div>
+                        <div class="thirdColumn">
+                            <div class="date-and-time">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexable">
+                    <div class="weatherContainer">
+
+                        <!-- HOURLY FORECAST -->
+                        <!-- HOURLY FORECAST -->
+                        <!-- HOURLY FORECAST -->
+
+                        <div class="dailyForecast">
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                            <div class="dailyCard">
+                                <div class="dailyTime"></div>
+                                <img class="dailyImg" src="" alt="">
+                                <div class="dailyTemp"></div>
+                                <div class="dailyValue hidden"></div>
+                            </div>
+                        </div>
+
+                        <!-- DAILY FORECAST -->
+                        <!-- DAILY FORECAST -->
+                        <!-- DAILY FORECAST -->
+
+                        <div class="right-wrapper-right">
+                            <div class="top">
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                                <div class="weather-block">
+                                    <span class="day-of-week"></span>
+                                    <img class="more-weather-icon" src="">
+                                    <span class="temperature-value"></span>
+                                    <span class="more-weather-value hidden"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DETAILS -->
+                        <!-- DETAILS -->
+                        <!-- DETAILS -->
+
+                        <div class="weather-details">
+                            <div class="detailsContainer">
+                                <p class="cardsName">Wind</p>
+                                <div class="compass">
+                                    <p class="nord">N</p>
+                                    <div class="eastWest flexable">
+                                        <p class="west">W</p>
+                                        <p class="east">E</p>
+                                    </div>
+                                    <p class="south">S</p>
+                                    <div id="compassRing">
+                                        <div id="bezel">
+                                            <p class="windSpeed"></p>
+                                            <div id="pointerContain">
+                                                <div id="pointer"></div>
+                                                <div id="tassel"></div>
+                                            </div>
+                                            <div id="direction">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detailsContainer">
+                                <p class="cardsName">Humidity</p>
+                                <div class="progressDiv">
+                                    <div class="progress-pie-chart" data-percent="67"><!--Pie Chart -->
+                                        <div class="ppc-progress">
+                                            <div class="ppc-progress-fill"></div>
+                                        </div>
+                                        <div class="ppc-percents">
+                                            <div class="pcc-percents-wrapper">
+                                                <span class="pcc-percents-span">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detailsContainer">
+                                <p class="cardsName">Daylight</p>
+                                <div class="sunInfo flexable">
+                                    <div class="sunString">
+                                        <div class="sunrise"></div>
+                                        <div class="divider"></div>
+                                        <div class="sunset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detailsContainer">
+                                <p class="cardsName">Pressure</p>
+                                <div class="speedbox">
+                                    <div class="speedbox-score" id="speedbox-score"></div>
+                                    <div class="speedbox-groove"></div>
+                                    <div class="speedbox-odo">
+                                        <div class="speedbox-down"></div>
+                                    </div>
+                                    <div class="speedbox-base"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEWS -->
+                    <!-- NEWS -->
+                    <!-- NEWS -->
+
+                    <div class="newsContainer">
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                        <div class="newBlock">
+                            <p class="newTitle"></p>
+                            <p class="newDescr"></p>
+                            <div class="flexable">
+                                <a class="newLink" href=""><img src="./img/link.png" class="linkImg" alt=""></a>
+                                <p class="sourse"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEATHER RADAR -->
+            <!-- WEATHER RADAR -->
+            <!-- WEATHER RADAR -->
+
+            <div id="map" class="hidden invisible">
+                <iframe src="" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- MENU -->
+            <!-- MENU -->
+            <!-- MENU -->
+
+            <div class="right-wrapper invisible hidden">
+                <img class="closeImg" src="./img/close.png" alt="">
+                <div class="right-wrapper-left">
+                    <div class="location">
+                        <p class="chosen-cities">Kyiv</p>
+                        <p class="chosen-cities">Kharkiv</p>
+                        <p class="chosen-cities">Poltava</p>
+                        <p class="chosen-cities">Odessa</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="checkBox">
+                            <span class="slider round"></span>
+                            <div class="tempName flexable">
+                                <span class="celName">°C</span>
+                                <span class="farName">°F</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
