@@ -38,23 +38,19 @@ let sourse = document.querySelectorAll('.sourse');
 
 let windPointer = document.querySelector('#pointerContain');
 let windSpeed = document.querySelector('.windSpeed');
-
 let progress = document.querySelector('.progress-pie-chart');
 let progressFill = document.querySelector('.ppc-progress-fill');
 let percentsSpan = document.querySelector('.pcc-percents-span');
-
 let sunrise = document.querySelector('.sunrise');
 let sunset = document.querySelector('.sunset');
-
 let speedboxDown = document.querySelector('.speedbox-down');
 let speedboxScore = document.querySelector('.speedbox-score');
 
-let checkBox = document.querySelector('#checkBox');
 
 let rightSideBar = document.querySelector('.menu');
 let menu = document.querySelector('.right-wrapper');
 let close = document.querySelector('.closeImg');
-
+let checkBox = document.querySelector('#checkBox');
 let celName = document.querySelector('.celName');
 let farName = document.querySelector('.farName');
 
@@ -67,6 +63,10 @@ let celsius = true;
 let newCityFlag = false;
 let lat;
 let lon;
+
+// LOCAL STORAGE
+// LOCAL STORAGE
+// LOCAL STORAGE
 
 window.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('onChecked') === 'true') {
@@ -90,6 +90,10 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// LOCATION
+// LOCATION
+// LOCATION
+
 currentBtn.addEventListener("click", getCurrentLocation);
 function getCurrentLocation() {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -107,6 +111,10 @@ function showPosition(position) {
             getWeather(city)
         })
 }
+
+// EVENT LISTENERS
+// EVENT LISTENERS
+// EVENT LISTENERS
 
 cityInput.addEventListener('click', () => {
     newCityFlag = true;
@@ -133,6 +141,30 @@ for (const chosenCity of chosenCities) {
         setTimeout(() => newCityFlag = false, 1000);
     });
 }
+
+rightSideBar.addEventListener('click', () => {
+    if (!newCityFlag) {
+        menu.classList.toggle('hidden');
+        setTimeout(() => menu.classList.toggle('invisible'), 200);
+        mapDiv.classList = 'hidden invisible';
+    }
+});
+
+close.addEventListener('click', () => {
+    if (!newCityFlag) {
+        menu.classList.toggle('hidden');
+        setTimeout(() => menu.classList.toggle('invisible'), 200);
+    }
+});
+
+openMap.addEventListener('click', () => {
+    mapDiv.classList.toggle('hidden');
+    setTimeout(() => mapDiv.classList.toggle('invisible'), 200);
+})
+
+// GET WEATHER
+// GET WEATHER
+// GET WEATHER
 
 function getWeather(city) {
     let url = "https://api.openweathermap.org/data/2.5/weather?q=" + `${city}` + "&appid=bf35cac91880cb98375230fb443a116f";
@@ -331,6 +363,10 @@ function getWeather(city) {
 }
 
 
+// GET DATE
+// GET DATE
+// GET DATE
+
 function getDate() {
     let daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let months = ['Jan', 'Feb', 'March', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
@@ -353,24 +389,3 @@ function getDate() {
         daysOfWeekOut[i - 1].textContent = daysOfWeek[date.getDay() + i];
     }
 }
-
-rightSideBar.addEventListener('click', () => {
-    if (!newCityFlag) {
-        menu.classList.toggle('hidden');
-        setTimeout(() => menu.classList.toggle('invisible'), 200);
-        mapDiv.classList = 'hidden invisible';
-    }
-});
-
-close.addEventListener('click', () => {
-    if (!newCityFlag) {
-        menu.classList.toggle('hidden');
-        setTimeout(() => menu.classList.toggle('invisible'), 200);
-    }
-});
-
-openMap.addEventListener('click', () => {
-    mapDiv.classList.toggle('hidden');
-    setTimeout(() => mapDiv.classList.toggle('invisible'), 200);
-})
-
